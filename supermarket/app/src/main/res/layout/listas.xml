@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Lista de productos"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/carnes"
+        android:layout_marginTop="71dp"
+        android:src="@drawable/pro"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/lacteos"
+        android:src="@drawable/pro"
+        android:layout_alignTop="@+id/carnes"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="30dp" />
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/refrescos"
+        android:src="@drawable/pro"
+        android:layout_below="@+id/carnes"
+        android:layout_alignLeft="@+id/lacteos"
+        android:layout_alignStart="@+id/lacteos" />
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/ropa"
+        android:src="@drawable/pro"
+        android:layout_below="@+id/carnes"
+        android:layout_alignLeft="@+id/carnes"
+        android:layout_alignStart="@+id/carnes" />
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/imageButton5"
+        android:src="@drawable/pro"
+        android:layout_below="@+id/refrescos"
+        android:layout_alignLeft="@+id/refrescos"
+        android:layout_alignStart="@+id/refrescos" />
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/imageButton6"
+        android:src="@drawable/pro"
+        android:layout_below="@+id/ropa"
+        android:layout_alignLeft="@+id/ropa"
+        android:layout_alignStart="@+id/ropa" />
+
+</RelativeLayout>
